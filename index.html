@@ -12,6 +12,11 @@
     <header class="header">
       <h1>🧠 Browser RAG Quiz</h1>
       <p class="subtitle">100% Client-Side • Transformers.js Powered • No Server Required</p>
+      <div class="badges">
+        <span class="badge badge-orange">Transformers.js</span>
+        <span class="badge badge-green">MIT License</span>
+        <span class="badge badge-blue">100% Client-Side</span>
+      </div>
     </header>
 
     <!-- Status Panel -->
@@ -32,7 +37,7 @@
 
     <!-- Model Selection -->
     <div class="model-selection" id="modelSelection">
-      <h2>🚀 Setup</h2>
+      <h2>🚀 Start Your Quiz</h2>
       <div class="model-group">
         <label for="llmSelect">Select LLM Model:</label>
         <select id="llmSelect">
@@ -155,11 +160,155 @@
       </div>
     </div>
 
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+      <div class="hero-content">
+        <h2>Learn AI & Programming with Real RAG Technology</h2>
+        <p>Experience a fully browser-based quiz powered by real AI models. All processing happens locally — your data never leaves your device.</p>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <span class="feature-icon">🔒</span>
+            <span class="feature-text">Privacy First</span>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">🚀</span>
+            <span class="feature-text">No Server</span>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">🧠</span>
+            <span class="feature-text">Real AI</span>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">💾</span>
+            <span class="feature-text">Cached Models</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="info-section" id="howItWorks">
+      <h2>🏗️ How It Works</h2>
+      <div class="architecture-diagram">
+        <div class="arch-box">
+          <span class="arch-icon">🤖</span>
+          <span class="arch-label">Flan-T5</span>
+          <span class="arch-sublabel">Text Generation</span>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box">
+          <span class="arch-icon">🔗</span>
+          <span class="arch-label">Transformers.js</span>
+          <span class="arch-sublabel">Embeddings</span>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box">
+          <span class="arch-icon">📦</span>
+          <span class="arch-label">Vector Store</span>
+          <span class="arch-sublabel">In-Memory</span>
+        </div>
+      </div>
+      <div class="how-it-works-steps">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h4>Model Loading</h4>
+          <p>Embedding model loads for text vectorization, then LLM loads for generation</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h4>Knowledge Indexing</h4>
+          <p>Educational content is embedded and stored in a vector database</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h4>RAG Retrieval</h4>
+          <p>Relevant context is retrieved for each quiz question</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">4</span>
+          <h4>AI Evaluation</h4>
+          <p>LLM evaluates your answers using retrieved context</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="info-section" id="topicsSection">
+      <h2>📚 Knowledge Base Topics</h2>
+      <p class="section-description">Test your knowledge across these domains:</p>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <span class="topic-icon">🐍</span>
+          <h4>Python Programming</h4>
+          <p>Syntax, data types, functions, and more</p>
+        </div>
+        <div class="topic-card">
+          <span class="topic-icon">🤖</span>
+          <h4>Machine Learning</h4>
+          <p>Supervised, unsupervised, and neural networks</p>
+        </div>
+        <div class="topic-card">
+          <span class="topic-icon">💬</span>
+          <h4>Large Language Models</h4>
+          <p>Transformers, RAG, and prompt engineering</p>
+        </div>
+        <div class="topic-card">
+          <span class="topic-icon">🌐</span>
+          <h4>Web Development</h4>
+          <p>HTML, CSS, JavaScript, and Web APIs</p>
+        </div>
+        <div class="topic-card">
+          <span class="topic-icon">📊</span>
+          <h4>Data Science</h4>
+          <p>Pandas, NumPy, and visualization</p>
+        </div>
+        <div class="topic-card">
+          <span class="topic-icon">⚡</span>
+          <h4>Browser AI</h4>
+          <p>WebGPU, client-side ML, and WASM</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="info-section" id="modelsSection">
+      <h2>🤖 Supported LLM Models</h2>
+      <p class="section-description">All models run entirely in your browser using ONNX Runtime (WASM)</p>
+      <div class="models-table">
+        <div class="model-row model-header">
+          <span>Model</span>
+          <span>Size</span>
+          <span>Notes</span>
+        </div>
+        <div class="model-row">
+          <span><strong>Flan-T5 Small</strong></span>
+          <span>~250MB</span>
+          <span>⚡ Fastest - Great for quick responses</span>
+        </div>
+        <div class="model-row">
+          <span><strong>Flan-T5 Base</strong></span>
+          <span>~500MB</span>
+          <span>✨ Better quality responses</span>
+        </div>
+        <div class="model-row">
+          <span><strong>LaMini Flan-T5</strong></span>
+          <span>~250MB</span>
+          <span>📝 Instruction-tuned variant</span>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-      <p>Powered by <a href="https://github.com/mlc-ai/web-llm" target="_blank">WebLLM</a> & 
-         <a href="https://github.com/xenova/transformers.js" target="_blank">Transformers.js</a></p>
-      <p class="footer-note">All processing happens in your browser. No data leaves your device.</p>
+      <div class="footer-links">
+        <a href="https://huggingface.co/docs/transformers.js" target="_blank">📖 Transformers.js Docs</a>
+        <a href="https://huggingface.co/models?search=flan-t5" target="_blank">🤗 Flan-T5 Models</a>
+        <a href="https://github.com/micrometre/web-rag-quiz" target="_blank">💻 GitHub</a>
+      </div>
+      <p>Powered by <a href="https://huggingface.co/docs/transformers.js" target="_blank">Transformers.js</a> & 
+         <a href="https://onnxruntime.ai/docs/tutorials/web/" target="_blank">ONNX Runtime Web</a></p>
+      <p class="footer-note">🔒 All processing happens in your browser. No data leaves your device.</p>
+      <p class="footer-credits">Made with ❤️ using open-source AI</p>
     </footer>
   </div>
 

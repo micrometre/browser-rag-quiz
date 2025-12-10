@@ -41,6 +41,12 @@ class QuizApp {
       llmStatus: document.getElementById('llmStatus'),
       kbStatus: document.getElementById('kbStatus'),
       
+      // Info sections (for hiding when quiz starts)
+      heroSection: document.getElementById('heroSection'),
+      howItWorks: document.getElementById('howItWorks'),
+      topicsSection: document.getElementById('topicsSection'),
+      modelsSection: document.getElementById('modelsSection'),
+      
       // Model selection
       modelSelection: document.getElementById('modelSelection'),
       llmSelect: document.getElementById('llmSelect'),
@@ -167,6 +173,11 @@ class QuizApp {
       // Start quiz after brief delay
       setTimeout(() => {
         this.elements.modelSelection.style.display = 'none';
+        // Hide info sections when quiz starts
+        if (this.elements.heroSection) this.elements.heroSection.style.display = 'none';
+        if (this.elements.howItWorks) this.elements.howItWorks.style.display = 'none';
+        if (this.elements.topicsSection) this.elements.topicsSection.style.display = 'none';
+        if (this.elements.modelsSection) this.elements.modelsSection.style.display = 'none';
         this.elements.quizSection.style.display = 'block';
         this.showQuestion();
       }, 500);
