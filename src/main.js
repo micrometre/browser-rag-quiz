@@ -29,7 +29,6 @@ class QuizApp {
     this.handleHint = this.handleHint.bind(this);
     this.handleRestart = this.handleRestart.bind(this);
   }
-
   /**
    * Initialize DOM elements and event listeners
    */
@@ -108,7 +107,9 @@ class QuizApp {
       }
     });
 
-    console.log('🎮 Quiz App initialized');
+    console.log( '🎮 Quiz App initialized');
+      console.log(vectorStore );
+
   }
 
   /**
@@ -146,9 +147,12 @@ class QuizApp {
       
       await vectorStore.addDocuments(knowledgeBase, (progress) => {
         this.updateProgress(progress.message, 30 + progress.progress * 0.2);
+      console.log(vectorStore );
       });
       
       this.elements.kbStatus.textContent = `✅ ${vectorStore.size} documents`;
+
+      // Log the vector data store for inspection
 
       // Step 3: Load LLM
       this.updateProgress('Loading LLM (this may take a while)...', 50);
@@ -236,7 +240,7 @@ class QuizApp {
     const userAnswer = this.elements.answerInput.value.trim();
     
     if (!userAnswer) {
-      alert('Please enter an answer!');
+      alert('Please enter an answer!', vectorStore );
       return;
     }
 
@@ -270,6 +274,7 @@ class QuizApp {
       this.score += result.score;
       this.elements.scoreValue.textContent = this.score;
 
+      console.log(knowledgeBase);
       // Show feedback
       this.showFeedback(result);
       
