@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🧠 Browser RAG Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles.css">
 </head>
+
 <body>
   <div class="app-container">
     <!-- Header -->
@@ -18,7 +23,7 @@
         <span class="badge badge-blue">100% Client-Side</span>
         <span class="badge badge-blue">
           Repo:
-        <a href="https://github.com/micrometre/browser-rag-quiz" target="_blank">🌟 Repo: browser-rag-quiz</a>
+          <a href="https://github.com/micrometre/browser-rag-quiz" target="_blank">🌟 Repo: browser-rag-quiz</a>
         </span>
       </div>
     </header>
@@ -86,7 +91,7 @@
           <span class="question-topic" id="questionTopic">Topic</span>
         </div>
         <h3 class="question-text" id="questionText">Loading question...</h3>
-        
+
         <!-- Context Display (RAG) -->
         <div class="context-section" id="contextSection">
           <button class="context-toggle" id="contextToggle">
@@ -100,12 +105,7 @@
 
       <!-- Answer Section -->
       <div class="answer-section">
-        <textarea 
-          id="answerInput" 
-          class="answer-input" 
-          placeholder="Type your answer here..."
-          rows="3"
-        ></textarea>
+        <textarea id="answerInput" class="answer-input" placeholder="Type your answer here..." rows="3"></textarea>
         <div class="answer-actions">
           <button class="btn btn-secondary" id="hintBtn">
             <span class="btn-icon">💡</span> Get Hint
@@ -168,7 +168,8 @@
     <section class="hero-section" id="heroSection">
       <div class="hero-content">
         <h2>Learn AI & Programming with Real RAG Technology</h2>
-        <p>Experience a fully browser-based quiz powered by real AI models. All processing happens locally — your data never leaves your device.</p>
+        <p>Experience a fully browser-based quiz powered by real AI models. All processing happens locally — your data
+          never leaves your device.</p>
         <div class="hero-features">
           <div class="hero-feature">
             <span class="feature-icon">🔒</span>
@@ -309,12 +310,14 @@
         <a href="https://huggingface.co/models?search=flan-t5" target="_blank">🤗 Flan-T5 Models</a>
         <a href="https://github.com/micrometre/browser-rag-quiz" target="_blank">🌟 Repo: browser-rag-quiz</a>
       </div>
-      <p>Powered by <a href="https://huggingface.co/docs/transformers.js" target="_blank">Transformers.js</a> & 
-         <a href="https://onnxruntime.ai/docs/tutorials/web/" target="_blank">ONNX Runtime Web</a></p>
+      <p>Powered by <a href="https://huggingface.co/docs/transformers.js" target="_blank">Transformers.js</a> &
+        <a href="https://onnxruntime.ai/docs/tutorials/web/" target="_blank">ONNX Runtime Web</a>
+      </p>
       <p class="footer-note">🔒 All processing happens in your browser. No data leaves your device.</p>
     </footer>
   </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
