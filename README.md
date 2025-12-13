@@ -184,11 +184,6 @@ browser-rag-quiz/
 
 MIT License — feel free to use this project for any purpose.
 
-## 🙏 Acknowledgments
-
-- [Hugging Face](https://huggingface.co/) for [Transformers.js](https://github.com/huggingface/transformers.js)
-- [Xenova](https://github.com/xenova) for ONNX model conversions
-- [Google](https://github.com/google-research/FLAN) for Flan-T5 models
 
 ## 🔗 Useful Links
 
@@ -199,4 +194,4 @@ MIT License — feel free to use this project for any purpose.
 
 ---
 
-Made with ❤️ using [Transformers.js](https://github.com/huggingface/transformers.js)
+Made with ️ using [Transformers.js](https://github.com/huggingface/transformers.js)
